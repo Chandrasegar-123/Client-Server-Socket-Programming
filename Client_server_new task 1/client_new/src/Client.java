@@ -43,7 +43,7 @@ public class Client {
             e.printStackTrace();
         } finally {
             try {
-                if (socket == null) {
+                if (socket != null) {
                     socket.close();
                 }
                 if (inputStreamReader != null) {
